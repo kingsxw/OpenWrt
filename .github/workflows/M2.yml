@@ -2,9 +2,9 @@ name: M2-NOWIFI
 
 on:
   workflow_dispatch:
-  permissions:
-    contents: write
-    actions: write
+permissions:
+  contents: write
+  actions: write
 
 env:
   REPO_URL: https://github.com/breeze303/openwrt-6.x.git
