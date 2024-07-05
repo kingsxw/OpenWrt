@@ -99,6 +99,7 @@ jobs:
         # $GITHUB_WORKSPACE/$DIY_P2_SH
         sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
         sed -i 's/OpenWrt/ZN-M2/g' ./package/base-files/files/bin/config_generate
+        sed -i 's/LibWrt/OpenWrt/g' ./package/base-files/files/bin/config_generate
         ./scripts/feeds install -a
         rm -rf ./feeds/luci/themes/luci-theme-argon*
         git clone https://github.com/jerrykuku/luci-theme-argon.git ./feeds/luci/themes/luci-theme-argon
