@@ -95,7 +95,7 @@ jobs:
     
     - name: Install Feeds(安装feeds)
       run: |
-        # chmod +x $DIY_P1_SH $DIY_P2_SH $DIY_P3_SH
+        chmod +x $DIY_P1_SH $DIY_P2_SH $DIY_P3_SH
         cd $OPENWRT_PATH
         $GITHUB_WORKSPACE/$DIY_P1_SH
         ./scripts/feeds update -a
