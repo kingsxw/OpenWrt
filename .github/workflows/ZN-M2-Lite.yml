@@ -1,4 +1,4 @@
-name: ZN-M2
+name: ZN-M2-Lite
 
 on:
   repository_dispatch:
